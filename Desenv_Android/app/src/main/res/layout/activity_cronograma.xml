@@ -9,8 +9,8 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="395dp"
-        android:layout_height="715dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -26,7 +26,7 @@
 
             <TextView
                 android:id="@+id/tv_front_end"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
@@ -40,8 +40,8 @@
 
             <LinearLayout
                 android:id="@+id/LinearLaout1"
-                android:layout_width="369dp"
-                android:layout_height="247dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
@@ -49,7 +49,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_front_end"
-                tools:layout_width="match_parent">
+                tools:layout_width="wrap_content">
 
                 <TextView
                     android:id="@+id/textViewL1a"
@@ -124,8 +124,8 @@
 
             <LinearLayout
                 android:id="@+id/LinearLayout2"
-                android:layout_width="376dp"
-                android:layout_height="104dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="42dp"
                 android:layout_marginEnd="8dp"
@@ -133,7 +133,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/Tv_back_end"
-                tools:layout_width="match_parent">
+                tools:layout_width="wrap_content">
 
                 <TextView
                     android:id="@+id/textViewL2a"

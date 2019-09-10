@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,27 +17,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = getIntent();
-        if (intent.hasExtra( "teste")){
-            Bundle extras = intent.getExtras();
-            int argInt = extras.getInt("teste", -1);
-            if (argInt == -1){
-                throw new IllegalAccessException("Arquivo não é inteiro");
-
-            }
-            TextView textObeld = findViewById(argInt);
-//            textObeld.settextViewL2a(null,textViewL2a.BOLD );
-            textObeld.setTypeface(null, Typeface.BOLD;
-
-        }
-        Button openBT = findViewById(R.id.bt_open);
-        openBT.setOnClickListener((new View.OnClickListener() {
+        Button openBT = findViewById(R.id.button);
+        openBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent
+                Intent intent = new Intent(getApplicationContext(), CronogramaActivity.class);
+                intent.putExtra("teste", R.id.textViewL2a);
+                startActivity(intent);
             }
-        }) {
-
-        });
+        } );
     }
 }
